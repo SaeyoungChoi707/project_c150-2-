@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color:yellow">
+
+    <a-camera position="0 8 15"></a-camera>
+
+    <!-------------------------------------------Asset Management------------------------------------------->
+    <a-assets>
+
+      <a-asset-item id="train-obg" src="./Funky Esboo/tinker.obj"></a-asset-item>
+      <a-asset-item id="train-mtl" src="./Funky Esboo/obj.mtl"></a-asset-item>  
+      <a-asset-item id="fence" src="./old_fence/scene.gltf"></a-asset-item>   
+
+    <!--moooooooooooooodel-->
+    <a-entity obj-model="obj:#train-obg;mtl:#train-mtl" position="5 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1"></a-entity>
+    <a-entity gltf-model="fence" position="0 0 0" rotation="0 0 0" scale="0.5 0.1 0.2" ></a-entity>    
+    </a-assets> 
+</body>
+
+</html>
